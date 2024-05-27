@@ -3,15 +3,15 @@
 
 int main(){
     FILE *fp;
-    char arr[50];
-    fp = fopen("file.txt", "r");
+    char arr[50] = "Hello World";
+    fp = fopen("file.txt", "w");
     if(fp == NULL){
         printf("File not found\n");
     }
     else{
         printf("File is opened\n");
-        while(fgets(arr , 50, fp != NULL)){
-            printf("%s", arr);
+        if(strlen(arr) > 0){
+            fputs(arr, fp);
         }
         fclose(fp);
     }
