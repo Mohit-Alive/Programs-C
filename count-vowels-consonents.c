@@ -9,7 +9,7 @@ void count_vowels_and_consonant(char* str)
  
         char ch = str[i]; 
  
-        if (ch == 'a' || ch == 'e'
+        if (   ch == 'a' || ch == 'e'
             || ch == 'i' || ch == 'o'
             || ch == 'u' || ch == 'A'
             || ch == 'E' || ch == 'I'
