@@ -1,5 +1,5 @@
 #include <stdio.h> 
- #include <string.h>
+#include <string.h>
 
 void count_vowels_and_consonant(char* str) 
 { 
