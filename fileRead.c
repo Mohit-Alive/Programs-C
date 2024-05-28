@@ -3,11 +3,14 @@
 
 int main(){
     FILE *fp;
+
     char arr[50];
     fp = fopen("file.txt", "r");
+
     if(fp == NULL){
         printf("File not found\n");
     }
+    
     else{
         printf("File is opened\n");
         while(fgets(arr , 50, fp != NULL)){

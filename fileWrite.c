@@ -3,8 +3,10 @@
 
 int main(){
     FILE *fp;
+    
     char arr[50] = "Hello World";
     fp = fopen("file.txt", "w");
+
     if(fp == NULL){
         printf("File not found\n");
     }
